@@ -1,4 +1,5 @@
 1)download java 8 (GitHub.com/git-vinit/v)
+https://drive.google.com/drive/folders/1D77odopM0rGl8FnZc9TgG2iaFwPKv8da?usp=sharing
 2)create a folder name as java in c drive.
 3)then from program files go to java and cut the jdk folder and paste it into java c drive folder
 4)delete java folder form program files
