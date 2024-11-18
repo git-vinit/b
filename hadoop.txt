@@ -1,0 +1,107 @@
+1)download java 8 (GitHub.com/git-vinit/v)
+2)create a folder name as java in c drive.
+3)then from program files go to java and cut the jdk folder and paste it into java c drive folder
+4)delete java folder form program files
+5)configure the java to environment variable(bin folder java path)
+
+
+
+
+1) apache Hadoop download binary one version older
+2) extract it to c drive nad rename the Hadoop folder as Hadoop
+3)  open Hadoop ETC > right click on Hadoop env and then click on edit
+4) chnge the java jdk path at java home
+5) configure the sbin and bin path to env variables
+6) create one folder data(datanode, namenode) create this 2 folder in data folder
+
+7) Edit core-site.xml
+
+Add this
+<configuration>
+<property>
+	<name>fs.defaultFS</name>
+	<value>hdfs://localhost:9000</value>
+</property>
+</configuration>
+
+
+8) Edit mapreduce-site.xml
+
+Add this
+<configuration>
+<property>
+	<name>mapreduce.framework.name</name>
+	<value>yarn</value>
+</property>
+</configuration>
+
+
+9) Edit Yarn-site.xml
+
+Add this
+<configuration>
+
+<property>
+	<name>yarn.nodemanager.aux-services</name>
+	<value>mapreduce_shuffle</value>
+</property>
+<property>
+	<name>yarn.nodemanager.auxservices.mapreduce.shuffle</name>
+	<value>org.apache.hadoop.mapred.shufflehandler</value>
+</property>
+
+</configuration>
+
+10) Edit hdfs-site.xml
+
+ADD THIS
+<configuration>
+<property>
+	<name>dfs.replication</name>
+	<value>1</value>
+</property>
+<property>
+	<name>dfs.namenode.name.dir</name>
+	<value>C:\hadoop\data\namenode</value>
+</property>
+<property>
+	<name>dfs.datanode.name.dir</name>
+	<value>C:\hadoop\data\datanode</value>
+</property>
+</configuration>
+
+
+
+11) bin folder replacement
+https://drive.google.com/file/d/1nCN_jK7EJF2DmPUUxgOggnvJ6k6tksYz/view
+GitHub.com/git-vinit/v
+
+
+12) open bin folder click on winutils will show error
+    (msvcr120.dll download)
+    GitHub.com/git-vinit/v
+
+13) go to c drive > windows > system32 > paste the dll file
+
+14) again run winutil form Hadoop bin
+
+15) msvc170 download this file
+
+16) cmd as administrator (hdfs namenode -format)
+
+17) cd \
+
+18) cd Hadoop
+
+19) cd sbin
+
+20) start-dfs.cmd (to start datanode and namenode)
+
+21) jps
+
+22) start-yarn.cmd
+
+23) localhst:9870 (browser)
+
+24) localhost:8088
+
