@@ -1,4 +1,4 @@
-1)download java 8 (GitHub.com/git-vinit/v)
+1)download java 8 (GitHub.com/git-vinit/b)
 https://drive.google.com/drive/folders/1D77odopM0rGl8FnZc9TgG2iaFwPKv8da?usp=sharing
 2)create a folder name as java in c drive.
 3)then from program files go to java and cut the jdk folder and paste it into java c drive folder
@@ -75,12 +75,12 @@ ADD THIS
 
 11) bin folder replacement
 https://drive.google.com/file/d/1nCN_jK7EJF2DmPUUxgOggnvJ6k6tksYz/view
-GitHub.com/git-vinit/v
+GitHub.com/git-vinit/b
 
 
 12) open bin folder click on winutils will show error
     (msvcr120.dll download)
-    GitHub.com/git-vinit/v
+    GitHub.com/git-vinit/b
 
 13) go to c drive > windows > system32 > paste the dll file
 
